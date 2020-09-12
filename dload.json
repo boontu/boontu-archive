@@ -5,7 +5,7 @@
     "height": 200,
     "padding": 5,
   
-    "data": {"url": "https://raw.githubusercontent.com/boontu/boontu-archive/master/cars.json"},
+    "data": {"url": "./cars.json"},
   
     "mark": "point",
     "encoding": {
