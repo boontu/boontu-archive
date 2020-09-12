@@ -5,7 +5,7 @@
     "height": 200,
     "padding": 5,
   
-    "data": {"url": "./aaa.csv"},
+    "data": {"url": "aaa.csv"},
   
     "mark": "point",
     "encoding": {
