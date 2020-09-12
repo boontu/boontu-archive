@@ -5,7 +5,7 @@
     "height": 200,
     "padding": 5,
   
-    "data": {"url": "aaa.csv"},
+    "data": {"url": "https://raw.githubusercontent.com/boontu/boontu-archive/master/aaa.csv"},
   
     "mark": "point",
     "encoding": {
