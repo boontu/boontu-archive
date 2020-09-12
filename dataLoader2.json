@@ -6,27 +6,48 @@
     "padding": 5,
   
     "data": [
-      {
-        "name": "table",
-        "values": [
-          {"category": 11, "amount": 28},
-          {"category": 33, "amount": 55},
-          {"category": 44, "amount": 43},
-          {"category": 55, "amount": 91},
-          {"category": 66, "amount": 81},
-          {"category": 77, "amount": 53},
-          {"category": 22, "amount": 19},
-          {"category": 33, "amount": 87}
-        ]
-      }
-    ],
+        {
+           "Name":"chevrolet chevelle malibu",
+           "Miles_per_Gallon":18,
+           "Cylinders":8,
+           "Displacement":307,
+           "Horsepower":130,
+           "Weight_in_lbs":3504,
+           "Acceleration":12,
+           "Year":"1970-01-01",
+           "Origin":"USA"
+        },
+        {
+           "Name":"buick skylark 320",
+           "Miles_per_Gallon":15,
+           "Cylinders":8,
+           "Displacement":350,
+           "Horsepower":165,
+           "Weight_in_lbs":3693,
+           "Acceleration":11.5,
+           "Year":"1970-01-01",
+           "Origin":"USA"
+        },
+        {
+           "Name":"plymouth satellite",
+           "Miles_per_Gallon":18,
+           "Cylinders":8,
+           "Displacement":318,
+           "Horsepower":150,
+           "Weight_in_lbs":3436,
+           "Acceleration":11,
+           "Year":"1970-01-01",
+           "Origin":"USA"
+        }
+     ],
   
   
     "mark": "point",
     "encoding": {
-        "x": {"field": "category", "type": "quantitative"},
-        "y": {"field": "amount", "type": "quantitative"}
+        "x": {"field": "Horsepower", "type": "quantitative"},
+        "y": {"field": "Miles_per_Gallon", "type": "quantitative"}
       }
     
   }
   
+ 
