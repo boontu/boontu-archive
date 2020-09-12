@@ -6,11 +6,22 @@
     "padding": 5,
   
     "data": {"url": "https://raw.githubusercontent.com/boontu/boontu-archive/master/data_pb.csv"},
+    "selection": {
+        "grid": {
+          "type": "interval", "bind": "scales"
+        }
+    },
   
     "mark": "point",
     "encoding": {
-        "x": {"field": "pb1", "type": "quantitative"},
-        "y": {"field": "pb2", "type": "quantitative"}
+        "x": {
+            "field": "pb1", "type": "quantitative",
+            "scale": {"domain": [-1.5, 2.0]}
+        },
+        "y": {
+            "field": "pb2", "type": "quantitative",
+            "scale": {"domain": [-1.5, 1.0]}
+        }
       }
     
   }
