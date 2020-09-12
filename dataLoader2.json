@@ -1,0 +1,32 @@
+{
+    "$schema": "https://vega.github.io/schema/vega/v5.json",
+    "description": "A basic bar chart example, with value labels shown upon mouse hover.",
+    "width": 400,
+    "height": 200,
+    "padding": 5,
+  
+    "data": [
+      {
+        "name": "table",
+        "values": [
+          {"category": 11, "amount": 28},
+          {"category": 33, "amount": 55},
+          {"category": 44, "amount": 43},
+          {"category": 55, "amount": 91},
+          {"category": 66, "amount": 81},
+          {"category": 77, "amount": 53},
+          {"category": 22, "amount": 19},
+          {"category": 33, "amount": 87}
+        ]
+      }
+    ],
+  
+  
+    "mark": "point",
+    "encoding": {
+        "x": {"field": "category", "type": "quantitative"},
+        "y": {"field": "amount", "type": "quantitative"}
+      }
+    
+  }
+  
