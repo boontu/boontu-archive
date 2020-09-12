@@ -1,8 +1,8 @@
 {
     "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
     "description": "A basic bar chart example, with value labels shown upon mouse hover.",
-    "width": 800,
-    "height": 800,
+    "width": 900,
+    "height": 900,
     "padding": 0,
   
     "data": {"url": "https://raw.githubusercontent.com/boontu/boontu-archive/master/data_pb.csv"},
@@ -12,7 +12,7 @@
         }
     },
   
-    "mark": "circle",
+    "mark": "text",
     "encoding": {
         "x": {
             "field": "pb1", "type": "quantitative",
@@ -22,7 +22,9 @@
             "field": "pb2", "type": "quantitative",
             "scale": {"domain": [-1.5, 1.0]}
         },
-        "text": {"field": "pbIndex", "type": "Quantitative"}
+        "text": {
+            "field": "pbIndex", "type": "nominal"
+        }
       }
     
   }
