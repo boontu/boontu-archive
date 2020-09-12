@@ -21,7 +21,8 @@
         "y": {
             "field": "pb2", "type": "quantitative",
             "scale": {"domain": [-1.5, 1.0]}
-        }
+        },
+        "text": {"field": "pbIndex", "type": "nominal"}
       }
     
   }
