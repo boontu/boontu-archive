@@ -12,7 +12,7 @@
         }
     },
   
-    "mark": "point",
+    "mark": "circle",
     "encoding": {
         "x": {
             "field": "pb1", "type": "quantitative",
