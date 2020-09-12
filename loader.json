@@ -1,5 +1,5 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "description": "A scatterplot showing horsepower and miles per gallons for various cars.",
   "data": {"url": "https://raw.githubusercontent.com/boontu/boontu-archive/master/cars.json"},
   "mark": "point",
