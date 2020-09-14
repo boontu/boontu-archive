@@ -1,0 +1,67 @@
+{
+    "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+    "description": "A basic bar chart example, with value labels shown upon mouse hover.",
+    "width": 900,
+    "height": 900,
+    "padding": 0,
+  
+    "data": {"url": "https://raw.githubusercontent.com/boontu/boontu-archive/master/vis1.csv"},
+    "selection": {
+        "grid": {"type": "interval", "bind": "scales" }
+    },
+
+
+
+  "layer": [
+    {
+      "selection": {
+          "choose": {
+            "type": "single",
+            "fields": ["market"],
+            "bind": {
+              "input": "select", "options": [null, "index", "kospi", "sp500"]
+              }
+            
+          },
+          "grid": {"type": "interval", "bind": "scales" }
+        },
+    "mark": "text",
+    "encoding": {
+        "x": {
+            "field": "pb1", "type": "quantitative",
+            "scale": {"domain": [-1.5, 2.0]}
+        },
+        "y": {
+            "field": "pb2", "type": "quantitative",
+            "scale": {"domain": [-1.5, 1.0]}
+        },
+        "color": {"field": "market", "type": "nominal"},
+        "size": {"value": 1},
+        "tooltip": {"field": "name", "type": "nominal"},
+        "text": { "field": "code", "type": "nominal"}
+      }
+      
+    },
+  {
+      "transform": [{"filter": {"selection": "choose"}}],
+
+    "mark": "text",
+    "encoding": {
+        "x": {
+            "field": "pb1", "type": "quantitative",
+            "scale": {"domain": [-1.5, 2.0]}
+        },
+        "y": {
+            "field": "pb2", "type": "quantitative",
+            "scale": {"domain": [-1.5, 1.0]}
+        },
+        "color": {"field": "market", "type": "nominal"},
+        "size": {"value": 10},
+        "tooltip": {"field": "name", "type": "nominal"},
+        "text": { "field": "code", "type": "nominal"}
+      }
+    }    
+    ]
+
+  
+}
