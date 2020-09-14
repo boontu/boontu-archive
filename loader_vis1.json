@@ -1,0 +1,54 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v4.json",
+  "width": 800,
+  "height": 600,
+  
+  "data": {"url": "https://raw.githubusercontent.com/boontu/boontu-archive/master/vis1.csv"},
+  "selection": {
+    "grid": {
+      "type": "interval", "bind": "scales"
+    }
+  },  
+  "transform": [{
+    "calculate": "datum.Origin[0]",
+    "as": "OriginInitial"
+  }],
+
+
+  "layer": [
+    {
+      "selection": {
+          "org": {
+            "type": "single",
+            "fields": ["country"],
+            "bind": {"input": "select", "options": [all, "KOREA", "USA", "INDEX"]}
+          }
+        },
+      "mark": "text",
+      "encoding": {
+        "x": {"field": "pb1", "type": "quantitative"},
+        "y": {"field": "pb2", "type": "quantitative"},
+        "color": {"field": "market", "type": "nominal"},
+        "size": {"value": 1},
+        "tooltip": {"field": "name", "type": "nominal"},
+        "text": {"field": "code", "type": "nominal"}
+      }
+      
+    },
+  {
+      "transform": [{"filter": {"selection": "org"}}],
+      "mark": "text",
+      "encoding": 
+      {
+        "x": {"field": "pb1", "type": "quantitative"},
+        "y": {"field": "pb2", "type": "quantitative"},
+        "color": {"field": "market", "type": "nominal"},
+        "size": {"value": 30},
+        "tooltip": {"field": "name", "type": "nominal"},
+        "text": {"field": "code", "type": "nominal"}
+      }
+    }    
+    ]
+
+  
+}
