@@ -21,7 +21,7 @@
           "org": {
             "type": "single",
             "fields": ["country"],
-            "bind": {"input": "select", "options": [all, "KOREA", "USA", "INDEX"]}
+            "bind": {"input": "select", "options": [null, "KOREA", "USA", "INDEX"]}
           }
         },
       "mark": "text",
