@@ -36,7 +36,7 @@
             "scale": {"domain": [-1.5, 1.0]}
         },
         "color": {"field": "market", "type": "nominal"},
-        "size": {"value": 1},
+        "size": {"value": 5},
         "tooltip": {"field": "name", "type": "nominal"},
         "text": { "field": "code", "type": "nominal"}
       }
